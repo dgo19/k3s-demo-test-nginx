@@ -5,4 +5,4 @@ RUN sed -i -r "/^<body>$/a <p>created at $(date)</p>" /usr/share/nginx/html/inde
 ENTRYPOINT ["/docker-entrypoint.sh"]
 EXPOSE 80
 STOPSIGNAL SIGQUIT
-CMD ["nginx" "-g" "daemon off;"]
+CMD ["nginx", "-g", "daemon off;"]
